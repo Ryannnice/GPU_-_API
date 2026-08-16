@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+
+# Runtime state and logs must never be published.
+gpu-protector/runtime/
+api-proxy/*.log
+api-proxy/*.pid
+
+# CLIProxyAPI credentials and local configuration.
+api-proxy/config.yaml
+api-proxy/api_key.txt
+api-proxy/*-pro.json
