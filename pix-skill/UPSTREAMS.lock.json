@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "locked_at": "2026-08-22",
+  "install_root": ".agents/skills",
+  "skills": [
+    {
+      "requested_name": "photo-abstract-editorial",
+      "repository": "https://github.com/ZzzLc0405/photo-abstract-editorial.git",
+      "commit": "49e55073d6d0330274d31f75d27f5dd6eb35fd6d",
+      "tree": "280d5778ab4ffc609bb9d6ba7089f05e93da530b",
+      "install_source": "git archive of the pinned commit",
+      "license": "custom noncommercial license; see installed LICENSE.md",
+      "upstream_metadata_name": "photo-abstract-editorial",
+      "installed_metadata_name": "photo-abstract-editorial",
+      "upstream_skill_sha256": "83818269e300ec307e79eb23ea273646200b181cc638c70a28fdfcb554235f14",
+      "installed_skill_sha256": "83818269e300ec307e79eb23ea273646200b181cc638c70a28fdfcb554235f14",
+      "local_patch": null
+    },
+    {
+      "requested_name": "pixel-style-poster-skill",
+      "repository": "https://github.com/v92388375-gif/pixel-style-poster-skill.git",
+      "commit": "b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b",
+      "tree": "c85f6685785320465ab2538521823e1db8dbde6b",
+      "install_source": "git archive of the pinned commit",
+      "license": "MIT",
+      "upstream_metadata_name": "pixel-style-poster-skill",
+      "installed_metadata_name": "pixel-style-poster-skill",
+      "upstream_skill_sha256": "84ed7dc8838dd7111937254fdf0a778152de64b424de9b11c4ce913c036aaba2",
+      "installed_skill_sha256": "84ed7dc8838dd7111937254fdf0a778152de64b424de9b11c4ce913c036aaba2",
+      "local_patch": null
+    },
+    {
+      "requested_name": "photo-abstract-editorial-skill",
+      "repository": "https://github.com/kwhi6693-web/photo-abstract-editorial.git",
+      "commit": "063de8b3ddea1755a63a3d76d335057d05de9e11",
+      "tree": "4def38d07d0e23fc27f07b8d49249deb30979e51",
+      "install_source": "dist/photo-abstract-editorial-skill.zip",
+      "package_sha256": "a1a44b1a9cec9ba04b379a7d3a14315701abb14bb93e953003337870772d0a6d",
+      "license": "AGPL-3.0",
+      "upstream_metadata_name": "photo-abstract-editorial",
+      "installed_metadata_name": "photo-abstract-editorial-skill",
+      "upstream_skill_sha256": "92f5dd4bf51ae2f7f2f0b6a917dac908eb7bc212003cbf524e0bffeaa3a30d66",
+      "installed_skill_sha256": "ad9a24399ff0bc3a5a8c51e2d357decc80c1c34e7f3c8095c0481dc48c08a08a",
+      "upstream_agent_sha256": "147c71524913c3b0fa6ff09a3c026ed0bfd4778a3e6eab8f0f0de92fdacaccda",
+      "installed_agent_sha256": "522994401248443e21fb062e53b380ec5f5d5c83db11e84fd831cd753feab7a6",
+      "local_patch": "Invocation alias only: photo-abstract-editorial -> photo-abstract-editorial-skill in SKILL.md metadata and agents/openai.yaml default_prompt, to avoid collision"
+    },
+    {
+      "requested_name": "gc-minimal-zine-poster",
+      "repository": "https://github.com/LiamGvchi/gc-minimal-zine-poster.git",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "tree": "752c0248be66c193ec9630c4560c8182a2962eca",
+      "install_source": "git archive of the pinned commit",
+      "license": "MIT",
+      "upstream_metadata_name": "gc-minimal-zine-poster-v0-3",
+      "installed_metadata_name": "gc-minimal-zine-poster",
+      "upstream_skill_sha256": "89c7dc90c9aa80ba020c55e54b7de2fa2b49b49d20c240b150cd79ebea59775d",
+      "installed_skill_sha256": "c2b70b943481a890df5ddcdf6affaba136f72107b3b46f756059aeccad956225",
+      "upstream_agent_sha256": "4ef795103680c78bf593d9307167069b3f3651061b57ffef3b2b01623bfc99fe",
+      "installed_agent_sha256": "502acc283d19c43c52c2829fd8030f3d3ea811c9ae2bbef37655c305c8f5ae79",
+      "local_patch": "Invocation alias only: gc-minimal-zine-poster-v0-3 -> gc-minimal-zine-poster in SKILL.md metadata and agents/openai.yaml default_prompt"
+    },
+    {
+      "requested_name": "photo-relic-editorial",
+      "repository": "https://github.com/wnby/photo-relic-editorial.git",
+      "commit": "2232da16afddc7940e2e2f280bfb85aa62da1bae",
+      "tree": "daff093725c51bb42742426649b7ef08985c8ee6",
+      "install_source": "git archive of the pinned commit",
+      "license": "MIT",
+      "upstream_metadata_name": "photo-relic-editorial",
+      "installed_metadata_name": "photo-relic-editorial",
+      "upstream_skill_sha256": "9f7665be38b31c1e0f9db6d3dea10dca60b29ad71722224faf753ee5c3b18501",
+      "installed_skill_sha256": "9f7665be38b31c1e0f9db6d3dea10dca60b29ad71722224faf753ee5c3b18501",
+      "local_patch": null
+    }
+  ]
+}

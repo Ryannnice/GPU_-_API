@@ -1,0 +1,5 @@
+# Preserve third-party sources byte-for-byte; upstream Markdown contains intentional trailing spaces.
+.agents/skills/** -whitespace
+*.jpg binary
+*.jpeg binary
+*.png binary
