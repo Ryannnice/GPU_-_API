@@ -3,6 +3,8 @@ __pycache__/
 
 # Runtime state and logs must never be published.
 gpu-protector/runtime/
+cpu-protector/logs/
+cpu-protector/run/
 api-proxy/*.log
 api-proxy/*.pid
 
