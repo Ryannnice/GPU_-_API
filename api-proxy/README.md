@@ -14,3 +14,8 @@ CLIPROXY_LOG=/path/to/supervisor.log \
 ```
 
 Never commit `config.yaml`, API keys, OAuth account files, or logs.
+
+For verified Responses state limitations, CPU embeddings, and the CLBench
+history and Mem0 sampling patches, see [COMPATIBILITY.md](COMPATIBILITY.md).
+The accompanying probes use synthetic inputs and keep credentials out of
+their reports.

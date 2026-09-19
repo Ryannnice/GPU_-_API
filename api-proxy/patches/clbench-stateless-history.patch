@@ -1,0 +1,16 @@
+diff --git a/src/systems/utils/provider_adapters.py b/src/systems/utils/provider_adapters.py
+--- a/src/systems/utils/provider_adapters.py
++++ b/src/systems/utils/provider_adapters.py
+@@ -218,7 +218,11 @@
+         messages: list[dict[str, Any]],
+     ) -> str | list[dict[str, Any]]:
+         new_messages = self._new_visible_messages(messages)
+-        source = new_messages if self.state.previous_response_id else messages
++        source = (
++            new_messages
++            if self.openai_store and self.state.previous_response_id
++            else messages
++        )
+         converted = [
+             {"role": m["role"], "content": str(m.get("content", ""))}
+             for m in source
