@@ -20,5 +20,6 @@ history and Mem0 sampling patches, see [COMPATIBILITY.md](COMPATIBILITY.md).
 The accompanying probes use synthetic inputs and keep credentials out of
 their reports.
 
-For the Windows outbound proxy configuration and the Sol/Luna checks from
-2026-09-21, see [NETWORK_STATUS.md](NETWORK_STATUS.md).
+For the current Windows direct connection configuration, the Sol/Luna/Astra
+checks from 2026-09-22, and earlier diagnostics, see
+[NETWORK_STATUS.md](NETWORK_STATUS.md).
