@@ -21,5 +21,5 @@ The accompanying probes use synthetic inputs and keep credentials out of
 their reports.
 
 For the current Windows direct connection configuration, the Sol/Luna/Astra
-quota recovery checks from 2026-09-23, and earlier diagnostics, see
+quota recovery checks from 2026-09-25, and earlier diagnostics, see
 [NETWORK_STATUS.md](NETWORK_STATUS.md).
