@@ -1,0 +1,136 @@
+CLBench 正式实验进度
+完整口径：5 轮有记忆实验 + 1 轮无记忆 baseline 全部完成
+截至 19:43
+29 / 72
+40.3%
+Sol 已完成 24/36
+完整
+ 29
+5/5 轮 + baseline 完成
+1
+首轮完成
+ 3
+1 轮 + baseline 完成
+待补第 2-5 轮
+运行中
+ 4
+正在产生正式结果
+Docker 阻塞
+ 29
+等待 Docker/WSL 恢复
+已排队
+ 7
+API-only
+可在当前队列继续运行
+72 条件完整矩阵
+12 组方法 / 模型 × 6 数据集；B = 无记忆 baseline；列下方为每轮实例数
+方法 / 模型
+频谱监测
+ 90 / 轮
+代码库适应
+ 19 / 轮
+队列研究
+ 20 / 轮
+数据库探索
+ 40 / 轮
+可利用扑克
+ 120 / 轮
+销售预测
+ 12 / 轮
+完整数
+ACE / Sol
+5/5；B 43/120
+5/6
+Claude / Sol
+0/6
+Codex / Sol
+1/6
+Mem0 / Sol
+6/6
+ICL / GPT-5.5
+1/5+B
+1/5；B 74/120
+1/6
+ICL / Luna
+1/5+B
+1/6
+ICL / Sol
+6/6
+ICL / Terra
+1/5+B
+1/6
+ICL / Astra
+1/5；B 9/20
+1/6
+ICL-Notepad / Luna
+第1轮 13/20
+1/6
+ICL-Notepad / Sol
+6/6
+ICL-Notepad / Astra
+0/6
+完整数
+10/12
+4/12
+4/12
+4/12
+3/12
+4/12
+29/72
+数据集与实验规模
+单条件为 6 轮；总计为全部 72 条件的目标
+数据集
+每轮实例
+单条件完整规模
+完整条件
+当前说明
+Blind Spectrum Monitoring
+90
+540
+10/12
+最接近完成的数据集
+Codebase Adaptation
+19
+114
+4/12
+其余均受 Docker/WSL 影响
+Cohort Studies
+20
+120
+4/12
+3 个首轮完成，2 个运行中
+Database Exploration
+40
+240
+4/12
+其余均受 Docker/WSL 影响
+Exploitable Poker
+120
+720
+3/12
+两条 baseline 正在并行
+Sales Prediction
+12
+72
+4/12
+其余均受 Docker/WSL 影响
+总计
+301/轮
+21,672 个实例
+29/72
+全量目标，含全部 5 轮和 baseline
+当前四路运行
+Sol + ACE + Poker
+43/120
+baseline
+Astra + ICL + Cohort
+9/20
+baseline
+Luna + ICL-Notepad + Cohort
+13/20
+第 1 轮
+GPT-5.5 + ICL + Poker
+74/120
+baseline
+今日已完成阶段累计 906 个有效实例。
+下一批最可能完成：Astra Cohort 首轮条件、Luna-Notepad Cohort rollout。

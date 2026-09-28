@@ -1,0 +1,28 @@
+{
+  "file": "C:\\Desktop\\GPU_-_API\\output\\pdf\\clbench_progress_1943_onepage.pdf",
+  "pages": 1,
+  "page_format": "A3 landscape",
+  "page_size_points": [
+    1190.55,
+    841.89
+  ],
+  "conditions_by_status": {
+    "complete": 29,
+    "running": 4,
+    "blocked": 29,
+    "first": 3,
+    "queued": 7
+  },
+  "column_completion_counts": [
+    10,
+    4,
+    4,
+    4,
+    3,
+    4
+  ],
+  "sol_complete": "24/36",
+  "total_target_instances": 21672,
+  "required_texts_verified": 34,
+  "missing_glyphs": []
+}

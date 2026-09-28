@@ -1,6 +1,37 @@
 # Windows 反代网络修复记录
 
-## 当前可用性：2026-09-25 13:39 充值后已恢复
+## 当前可用性：2026-09-27 01:38 清除旧额度冷却后短请求恢复
+
+01:35 实测 Sol、Luna、Astra 均被本地 `model_cooldown` 拒绝；缓存引用的是
+00:44:54 的上游 `usage_limit_reached`。01:36 直接读取 ChatGPT 额度接口返回
+HTTP 200、`allowed=true`、`limit_reached=false`，该周窗口的 `used_percent=0`。
+因此不能把旧冷却响应中的等待时间当成当前上游额度状态。
+
+01:37:13 已重启受守护任务管理、经路径及端口归属核验的反代进程，约 10.39 秒
+恢复本地 API。配置与认证文件的 SHA-256 均未变化，守护任务继续运行。
+
+01:38 对三个模型各执行一次 Chat Completions 非流式请求及一次 Responses
+流式请求，六次全部成功，耗时 1.861–3.055 秒；三条 Responses 均收到
+`response.completed` 和 EOF，返回模型与请求一致。上述结果仅覆盖合成短请求，
+不能证明下述长实验流停滞问题已经解决。
+
+脱敏证据：`%USERPROFILE%\.cli-proxy-api\quota-recovery-2026-09-27.json`，
+以及同目录的 `health-check-2026-09-27-013521.json`、当日 `usage-check-*.json`
+和 `cooldown-reset-process-2026-09-27.json`。
+
+## 2026-09-26 Responses 长流停滞仍待定位
+
+已匹配用户报告的 18:20:40、18:30:41 两次 Responses 请求，反代耗时分别为
+9 分 59 秒、15 分 2 秒，均记录 HTTP 200；该状态不能证明 SSE 已正常完成。
+19:39 补测的 Sol Responses 短文本、工具调用流及 Chat Completions 流均完整结束，
+但没有复现长实验输入，也没有验证长流问题已修复。
+已比对 v7.3.8 与最新 v7.3.18 源码，生产实例和实验配置未改动。
+详细依据及后续建议见 [RESPONSES_STREAM_STATUS.md](RESPONSES_STREAM_STATUS.md)。
+
+同日 20:05:32 的策略拒绝和 20:07:09 的容量过载已单独核对，证据等级及失败分类见
+[FAILURE_CLASSIFICATION_20260926.md](FAILURE_CLASSIFICATION_20260926.md)。
+
+## 2026-09-25 13:39 充值后恢复
 
 用户报告昨日额度耗尽后已充值。本次检查发现反代进程与守护任务仍在运行，
 但 Sol、Luna、Astra 均在 0.018–0.041 秒内被本地 `model_cooldown` 拒绝，

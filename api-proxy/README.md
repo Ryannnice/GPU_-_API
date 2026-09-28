@@ -23,3 +23,6 @@ their reports.
 For the current Windows direct connection configuration, the Sol/Luna/Astra
 quota recovery checks from 2026-09-25, and earlier diagnostics, see
 [NETWORK_STATUS.md](NETWORK_STATUS.md).
+
+For the 2026-09-26 long Responses stream stalls, terminal-event probes, and
+version comparison, see [RESPONSES_STREAM_STATUS.md](RESPONSES_STREAM_STATUS.md).
